@@ -25,7 +25,8 @@ func panicHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	dps := deferstats.NewClient("z57z3xsEfpqxpr0dSte0auTBItWBYa1c")
+	dps := deferstats.NewClient("v00L0K6CdKjE4QwX5DL1iiODxovAHUfo")
+	dps.Setenvironment("unikernel")
 
 	go dps.CaptureStats()
 
